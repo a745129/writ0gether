@@ -1,5 +1,11 @@
 page-form-new {
-    
+    .top-right-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0 8px;
+        font-size: 1.6rem;
+    }
     form{
         ion-item{
             padding-left: 0 !important;
@@ -9,7 +15,8 @@ page-form-new {
             margin-left: 0 !important;
         }
         .form-new-content{
-            min-height: 100px;
+            min-height: 160px;
+            font-size: 1.8rem;
         }
     }
 }

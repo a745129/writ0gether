@@ -20,7 +20,12 @@ import { LoginService } from '../service/login.service';
       MyApp
     ],
     imports: [
-		IonicModule.forRoot(MyApp),
+		IonicModule.forRoot(MyApp, {
+			backButtonText: '',
+			pageTransition: 'ios-transition',
+			spinner:'bubbles',
+			swipeBackEnabled: true,
+		}),
 		IonicStorageModule.forRoot(),
 		BrowserModule,
 		ReactiveFormsModule,

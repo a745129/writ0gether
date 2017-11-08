@@ -1,9 +1,11 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title text-right>
-      <ion-icon name="ios-send" tappable (click)="publish()"></ion-icon>
-    </ion-title>
+    <div class="top-right-btn">
+    <span tappable (click)="publish()">
+      发布
+    </span>
+  </div>
   </ion-navbar>
 
 </ion-header>
@@ -15,8 +17,10 @@
       <ion-label floating>标题</ion-label>
       <ion-input></ion-input>
     </ion-item>
-    <ion-item>
-        <ion-textarea placeholder="内容"></ion-textarea>
-    </ion-item>
+    <div  class="form-new-content" 
+          contenteditable="true" 
+          placeholder="请开始你的表演..."
+          padding-vertical>
+    </div>
   </form>
 </ion-content>
