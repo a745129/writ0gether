@@ -2,18 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { HomePage } from './home';
-
+import {FormNewPage} from './form/form-new';
 
 @NgModule({
 	declarations: [
-		HomePage
+		HomePage,
+		FormNewPage
 	],
 	imports: [
 		IonicPageModule.forChild(HomePage),
-		BrowserModule,
+		BrowserModule
 	],
 	entryComponents: [
-		HomePage
+		HomePage,
+		FormNewPage
 	],
 	providers: [
 		

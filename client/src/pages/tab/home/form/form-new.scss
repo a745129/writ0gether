@@ -1,0 +1,15 @@
+page-form-new {
+    
+    form{
+        ion-item{
+            padding-left: 0 !important;
+        }
+        textarea{
+            min-height: 100px;
+            margin-left: 0 !important;
+        }
+        .form-new-content{
+            min-height: 100px;
+        }
+    }
+}

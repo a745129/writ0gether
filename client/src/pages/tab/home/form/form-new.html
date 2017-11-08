@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-right>
+      <ion-icon name="ios-send" tappable (click)="publish()"></ion-icon>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding-horizontal>
+  <form>
+    <ion-item>
+      <ion-label floating>标题</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-textarea placeholder="内容"></ion-textarea>
+    </ion-item>
+  </form>
+</ion-content>

@@ -1,49 +1,16 @@
 <ion-header>
 
 	<ion-navbar>
-		<ion-title text-center>主页</ion-title>
+		<ion-title>主页</ion-title>
 	</ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-	<ion-card>
-		<!-- <img src="img/card-saopaolo.png"/> -->
-		<ion-row text-center>
-		<ion-col>
-		<button ion-button icon-only color='light'><ion-icon name="qr-scanner"></ion-icon></button>
-		</ion-col>
-		<ion-col>
-		<button ion-button icon-only color='light'><ion-icon name="paper"></ion-icon></button>
-		</ion-col>
-		<ion-col>
-		<button ion-button icon-only color='light'><ion-icon name="browsers"></ion-icon></button>
-		</ion-col>
-		<ion-col>
-		<button ion-button icon-only color='light'><ion-icon name="cloudy"></ion-icon></button>
-		</ion-col>
-		</ion-row>  
-	</ion-card>
-	<ion-list>
-		<ion-item-divider>常用</ion-item-divider>
-		<ion-item-group>
-		<ion-item>
-		<ion-row text-center>
-			<ion-col>
-			<button ion-button color='light' block (click)="goTo('')">按钮</button>
-			</ion-col>
-			<ion-col>
-			<button ion-button color='light' block (click)="goTo('')">按钮</button>
-			</ion-col>
-			<ion-col>
-			<button ion-button color='light' block (click)="goTo('')">按钮</button>
-			</ion-col>
-			<ion-col>
-			<button ion-button color='light' block (click)="goTo('')">按钮</button>
-			</ion-col>
-		</ion-row>
-		</ion-item>
-		</ion-item-group>
-	</ion-list>
+	<ion-fab right bottom>
+		<button ion-fab tappable (click)="doTap()">
+			<ion-icon name="md-add" ></ion-icon>
+		</button>
+	</ion-fab>
 </ion-content>
