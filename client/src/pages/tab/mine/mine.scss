@@ -1,0 +1,102 @@
+page-mine {
+	.scroll-content{
+		background-image: url(../assets/img/bg_long_pic_02.jpg);
+
+		.mine_setting_div{
+			height: 4.4rem;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			font-size: 1.4rem;
+			color: #fff;
+			padding: 0 0.8rem;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			.show_user_name_here{
+				flex-grow: 5;
+			}
+			.show_setting_here{
+				flex-grow: 0;
+			}
+		}
+
+		.mine_userinfo_div{
+			margin: 1.6rem 0;
+			padding: 0 1.6rem;
+			color: #fff;
+			.userinfo_name_and_photo{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				img{
+					display: block;
+					width: 80px;
+					height:80px;
+					border-radius: 50%;
+				}
+				h2, h5{
+					margin: 0;
+				}
+				.userinfo_edit{
+					padding: 0.4rem 0.8rem;
+					font-size: 1.2rem;
+					background-color: #90a4ae;
+					border-radius: 0.6rem;
+				}
+			}
+		}
+		.user_operation_info{
+			width: 100%;
+			margin: 1.6rem 0;
+			margin-top: 3.2rem;
+			padding: 0 1.6rem;
+			background-color: #fff;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			div{
+				text-align: center;
+			}
+			.user_operation_info_detail{
+				font-size: 1.4rem;
+				padding: 0.8rem 0;
+				display: flex;
+				flex-direction: column;
+
+				.user_work_info_detail_desc{
+					flex-grow: 4;
+				}
+				.user_work_info_detail_arrow{
+					flex-grow: 4;
+				}
+			}
+		}
+
+		.user_work_info{
+			width: 100%;
+			margin: 1.6rem 0;
+			padding: 0 1.6rem;
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.user_work_info_detail{
+				font-size: 2.0rem;
+				padding: 0.8rem 0;
+				display: flex;
+				flex-direction: row;
+
+				.user_work_info_detail_desc{
+					flex-grow: 5;
+				}
+				.user_work_info_detail_arrow{
+					flex-grow: 0;
+				}
+			}
+		}
+	}
+
+}

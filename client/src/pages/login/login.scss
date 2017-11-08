@@ -1,0 +1,30 @@
+page-login {
+	.scroll-content{
+		//background-image: url(../assets/img/bg_long_pic_03.jpg);
+
+		h3{
+			margin: 4.8rem 0;
+		}
+
+		.third_login_choice{
+			margin: 14rem 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+			#wechat_login{
+				background: url(../assets/img/custom_icon2.jpg) no-repeat;
+				background-position: -581px -260px;
+				width: 80px;
+				height: 80px;
+			}
+			#qq_login{
+				background: url(../assets/img/custom_icon2.jpg) no-repeat;
+				background-position: 0 0;
+				width: 80px;
+				height: 80px;
+			}
+		}
+
+	}
+}
