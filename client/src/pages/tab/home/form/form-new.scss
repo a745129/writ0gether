@@ -20,7 +20,7 @@ page-form-new {
             font-size: 1.8rem;
         }
         [contentEditable=true]:empty:not(:focus):before{
-            content:attr(data-text)
+            content: "请开始你的表演..."
         }
     }
 }

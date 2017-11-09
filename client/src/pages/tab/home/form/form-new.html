@@ -17,8 +17,8 @@
     </ion-item>
     <div  class="form-new-content" 
           contenteditable="true" 
-          placeholder="请开始你的表演..."
-          padding-vertical>
-    </div>
+          padding-vertical 
+          (focus)="startEdit($event)"
+          #contentDiv></div>
   </form>
 </ion-content>

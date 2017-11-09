@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @Component({
@@ -6,6 +6,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'form-new.html',
 })
 export class FormNewPage {
+
+    @ViewChild("contentDiv") contentDiv;
 
     constructor(public navCtrl: NavController, public navParams: NavParams) {
     }
@@ -17,5 +19,13 @@ export class FormNewPage {
 
     publish(){
       console.log('PUBLISH');
+    }
+
+    startEdit(ev){
+      console.log(ev);
+      let nativeEl = this.contentDiv.nativeElement;
+      // console.log(nativeEl.innerHTML);
+      nativeEl.innerHTML = "";
+
     }
 }
