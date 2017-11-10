@@ -1,21 +1,27 @@
 page-mine {
 	.scroll-content{
-		background-image: url(../assets/img/bg_long_pic_02.jpg);
-
+		//background-image: url(../assets/img/bg_long_pic_02.jpg);
+		background-color: #bebebe;
+		h2, h5{
+			margin: 0;
+		}
+		.mine_containter{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
 		.mine_setting_div{
-			height: 4.4rem;
+			height: 2.5rem;
 			width: 100%;
-			position: absolute;
-			top: 0;
-			font-size: 1.4rem;
+			font-size: 1.2rem;
 			color: #fff;
-			padding: 0 0.8rem;
+			padding: 0.8rem 1.2rem;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 
 			.show_user_name_here{
-				flex-grow: 5;
+				flex-grow: 1;
 			}
 			.show_setting_here{
 				flex-grow: 0;
@@ -24,12 +30,15 @@ page-mine {
 
 		.mine_userinfo_div{
 			margin: 1.6rem 0;
-			padding: 0 1.6rem;
+			padding: 0.8rem 1.6rem;
 			color: #fff;
+			display: flex;
+			flex-direction: row;
 			.userinfo_name_and_photo{
+				width: 100%;
 				display: flex;
 				flex-direction: row;
-				justify-content: space-between;
+				justify-content: space-around;
 				align-items: center;
 				img{
 					display: block;
@@ -37,12 +46,12 @@ page-mine {
 					height:80px;
 					border-radius: 50%;
 				}
-				h2, h5{
-					margin: 0;
+				h2{
+					flex-grow: 2;
 				}
 				.userinfo_edit{
-					padding: 0.4rem 0.8rem;
-					font-size: 1.2rem;
+					padding: 0.8rem 1.6rem;
+					font-size: 1.6rem;
 					background-color: #90a4ae;
 					border-radius: 0.6rem;
 				}
@@ -51,8 +60,7 @@ page-mine {
 		.user_operation_info{
 			width: 100%;
 			margin: 1.6rem 0;
-			margin-top: 3.2rem;
-			padding: 0 1.6rem;
+			padding: 0.8rem 1.6rem;
 			background-color: #fff;
 			display: flex;
 			flex-direction: row;
@@ -67,10 +75,10 @@ page-mine {
 				flex-direction: column;
 
 				.user_work_info_detail_desc{
-					flex-grow: 4;
+					flex-grow: 1;
 				}
 				.user_work_info_detail_arrow{
-					flex-grow: 4;
+					flex-grow: 1;
 				}
 			}
 		}
@@ -78,19 +86,19 @@ page-mine {
 		.user_work_info{
 			width: 100%;
 			margin: 1.6rem 0;
-			padding: 0 1.6rem;
+			padding: 0.8rem 1.6rem;
 			background-color: #fff;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			flex-grow: 1;
 			.user_work_info_detail{
-				font-size: 2.0rem;
+				font-size: 1.8rem;
 				padding: 0.8rem 0;
 				display: flex;
 				flex-direction: row;
 
 				.user_work_info_detail_desc{
-					flex-grow: 5;
+					flex-grow: 1;
 				}
 				.user_work_info_detail_arrow{
 					flex-grow: 0;

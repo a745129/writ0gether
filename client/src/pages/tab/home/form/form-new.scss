@@ -7,16 +7,15 @@ page-form-new {
         font-size: 1.6rem;
     }
     form{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+
         ion-item{
             padding-left: 0 !important;
         }
-        textarea{
-            min-height: 100px;
-            margin-left: 0 !important;
-        }
         .form-new-content{
-            min-height: 320px;
-            height: 100%;
+			flex-grow: 1;
             font-size: 1.8rem;
         }
         [contentEditable=true]:empty:not(:focus):before{

@@ -1,35 +1,37 @@
 <ion-content>
-	<div class="mine_setting_div">
-		<div class="show_user_name_here" text-center>{{userNameInHead}}</div>
-		<div class="show_setting_here" (click)="changeSetting()">
-			<ion-icon name="settings"></ion-icon>
+	<div class="mine_containter">
+		<div class="mine_setting_div">
+			<div class="show_user_name_here" text-center>{{userNameInHead}}</div>
+			<div class="show_setting_here" (click)="changeSetting()">
+				<ion-icon name="settings"></ion-icon>
+			</div>
 		</div>
-	</div>
-	<div no-lines class="mine_userinfo_div">
-		<div class="userinfo_name_and_photo" text-center>
-			<img src="assets/img/pretty_face_default.jpg" alt="Pretty Face" />
-			<h2 margin-vertical (click)="goLogin()">立即登录</h2>
-			<h5 class="userinfo_edit" margin-vertical (click)="editUserinfo()">编辑</h5>
+		<div class="mine_userinfo_div">
+			<div class="userinfo_name_and_photo">
+				<img src="assets/img/pretty_face_default.jpg" alt="Pretty Face" />
+				<h2 text-center (click)="goLogin()">立即登录</h2>
+				<h5 class="userinfo_edit" margin-vertical (click)="editUserinfo()">编辑</h5>
+			</div>
 		</div>
-	</div>
-	<div class="user_operation_info">
-		<div class="user_operation_info_detail">
-			<div class="user_operation_info_detail_count">0</div>
-			<div class="user_operation_info_detail_name">关注</div>
+		<div class="user_operation_info">
+			<div class="user_operation_info_detail">
+				<div class="user_operation_info_detail_count">0</div>
+				<div class="user_operation_info_detail_name">关注</div>
+			</div>
+			<div class="user_operation_info_detail">
+				<div class="user_operation_info_detail_count">0</div>
+				<div class="user_operation_info_detail_name">粉丝</div>
+			</div>
 		</div>
-		<div class="user_operation_info_detail">
-			<div class="user_operation_info_detail_count">0</div>
-			<div class="user_operation_info_detail_name">粉丝</div>
-		</div>
-	</div>
-	<div class="user_work_info">
-		<div class="user_work_info_detail">
-			<div class="user_work_info_detail_desc">我的点赞</div>
-			<div class="user_work_info_detail_arrow"><ion-icon name="ios-arrow-forward-outline"></ion-icon></div>
-		</div>
-		<div class="user_work_info_detail">
-			<div class="user_work_info_detail_desc">我的作品</div>
-			<div class="user_work_info_detail_arrow"><ion-icon name="ios-arrow-forward-outline"></ion-icon></div>
+		<div class="user_work_info">
+			<div class="user_work_info_detail">
+				<div class="user_work_info_detail_desc">我的点赞</div>
+				<div class="user_work_info_detail_arrow"><ion-icon name="ios-arrow-forward-outline"></ion-icon></div>
+			</div>
+			<div class="user_work_info_detail">
+				<div class="user_work_info_detail_desc">我的作品</div>
+				<div class="user_work_info_detail_arrow"><ion-icon name="ios-arrow-forward-outline"></ion-icon></div>
+			</div>
 		</div>
 	</div>
 </ion-content>
